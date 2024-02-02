@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>This is Anfield - YNWA</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/cover.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+         <h1 id="counter" "class="cover">Haven't Won A Trophy Since 1995!!</h1>
+      </header>
+
+      <main role="main" class="inner cover">
+      </main>
+
+      <footer class="mastfoot mt-auto">
+         <h1 "class="cover">Since Everton last won a trophy!!</h1>
+      </footer>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    var countDownDate = new Date("May 20, 1995 17:00:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = now - countDownDate;
+      var years = Math.floor(distance / (31557600000));
+      var days = Math.floor(distance % (31557600000) / (86400000));
+      var hours = Math.floor((distance % (86400000)) / (3600000));
+      var minutes = Math.floor((distance % (3600000)) / (60000));
+      var seconds = Math.floor((distance % (60000)) / 1000);
+      document.getElementById("counter").innerHTML = years + " Years " + days + " Days " + hours + " Hours  " + minutes + " Minutes " + seconds + " Seconds ";
+}, 1000);
+</script>
+  </body>
+</html>
+
